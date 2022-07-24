@@ -26,7 +26,7 @@ app.layout = html.Div([
     html.H2(heading1),
     html.Img(src=app.get_asset_url(image1), style={'width': 'auto', 'height': '10%'}),
     dcc.Dropdown(id='your-input-here',
-                options=[{'label': i, 'value': i} for i in list_of_choices],
+                options=[{'label': i, 'value': i} for i in list_of_choices1],
                 value='punch',
                 style={'width': '500px'}),
     html.Br(),
