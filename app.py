@@ -54,7 +54,7 @@ def display_value(whatever_you_chose):
     return f'Chuck Norris will now execute you with a {whatever_you_chose}.'
 
 @app.callback(dash.dependencies.Output('your-output-here2', 'children'),
-              [dash.dependencies.Input('your-input-here2', 'value')])
+              [dash.dependencies.Input('your-input-here2', 'value2')])
 def display_value(whatever_you_chose2):
     return f'Does Lily have a twin? {whatever_you_chose2}.'
 
