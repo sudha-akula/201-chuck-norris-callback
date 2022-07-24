@@ -36,7 +36,7 @@ app.layout = html.Div([
     html.Img(src=app.get_asset_url(image2), style={'width': 'auto', 'height': '10%'}),
     dcc.Dropdown(id='your-input-here2',
                 options=[{'label': i, 'value2': i} for i in list_of_choices2],
-                value='Yes-absolutely!',
+                value2='Yes-absolutely!',
                 style={'width': '500px'}),
     html.Br(),
     html.Div(id='your-output-here2', children=''),
