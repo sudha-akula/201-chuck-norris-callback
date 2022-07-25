@@ -5,14 +5,13 @@ import dash_html_components as html
 import os
 
 ###### Set up variables
-list_of_choices1=['punch', 'body-slam', 'round-house kick to the face']
 list_of_choices2=['Yes-absolutely!', 'No-dont be ridiculous!']
+list_of_cats=['FalmePoint','Tuxedo'.'Calico','OrangeTabby',/'TigerTabby']
 ##githublink = 'https://github.com/austinlasseter/chuck_norris_execution'
 githublink = 'https://github.com/sudha-akula/201-chuck-norris-callback'
-image1='chucknorris.jpg'
-heading1='Chuck Norris execution method'
 
 image2='Lily_has_a_twin.jpg'
+image3='calico_sweetie.jpg'
 heading2='Does Lily have a twin? You tell me..'
 
 ########### Initiate the app
@@ -22,24 +21,16 @@ server = app.server
 app.title='Chuck'
 
 ####### Layout of the app ########
-app.layout = html.Div([
-    html.H2(heading1),
-    html.Img(src=app.get_asset_url(image1), style={'width': 'auto', 'height': '10%'}),
-    dcc.Dropdown(id='your-input-here',
-                options=[{'label': i, 'value': i} for i in list_of_choices1],
-                value='punch',
-                style={'width': '500px'}),
-    html.Br(),
-    html.Div(id='your-output-here', children=''),
-    
+app.layout = html.Div([    
     html.H2(heading2),
-    html.Img(src=app.get_asset_url(image2), style={'width': 'auto', 'height': '10%'}),
+    html.Img(src=app.get_asset_url(image3), style={'width': 'auto', 'height': '10%'}),
     dcc.Dropdown(id='your-input-here2',
                 options=[{'label': i, 'value': i} for i in list_of_choices2],
                 value='Yes-absolutely!',
                 style={'width': '500px'}),
     html.Br(),
     html.Div(id='your-output-here2', children=''),
+    
     
     html.Br(),
     html.A('Code on Github', href=githublink),
@@ -48,11 +39,6 @@ app.layout = html.Div([
 
 
 ######### Interactive callbacks go here #########
-@app.callback(dash.dependencies.Output('your-output-here', 'children'),
-              [dash.dependencies.Input('your-input-here', 'value')])
-def display_value(whatever_you_chose):
-    return f'Chuck Norris will now execute you with a {whatever_you_chose}.'
-
 @app.callback(dash.dependencies.Output('your-output-here2', 'children'),
               [dash.dependencies.Input('your-input-here2', 'value')])
 def display_value(whatever_you_chose2):
