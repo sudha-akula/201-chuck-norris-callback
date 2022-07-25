@@ -6,7 +6,7 @@ import os
 
 ###### Set up variables
 list_of_choices2=['Yes-absolutely!', 'No-dont be ridiculous!']
-list_of_cats=['FalmePoint','Tuxedo'.'Calico','OrangeTabby',/'TigerTabby']
+list_of_cats=['FlamePoint','Calico','Tuxedo','Tabby','OrangeTabby','TigerTabby']
 ##githublink = 'https://github.com/austinlasseter/chuck_norris_execution'
 githublink = 'https://github.com/sudha-akula/201-chuck-norris-callback'
 
