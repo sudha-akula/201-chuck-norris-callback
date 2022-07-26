@@ -25,7 +25,7 @@ app.title='Cats'
 
 ####### Layout of the app ########
 app.layout = html.Div([    
-    html.H2('Project1:')
+    html.H2('Project1:'),
     html.H3(heading2),
     html.Img(src=app.get_asset_url(image2), style={'width': 'auto', 'height': '10%'}),
     dcc.Dropdown(id='your-input-here2',
@@ -36,7 +36,7 @@ app.layout = html.Div([
     html.Div(id='your-output-here2', children=''),
     
     html.Br(),
-    html.H2('Project2:')
+    html.H2('Project2:'),
     html.H3(heading3),
     dcc.Dropdown(id='your-input-cat',
                 options=[{'label': i, 'value': i} for i in list_of_cats],
