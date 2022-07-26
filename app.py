@@ -5,11 +5,11 @@ import dash_html_components as html
 import os
 
 ###### Set up variables
-list_of_choices2=['Yes-absolutely!', 'No-dont be ridiculous!']
-list_of_cats=['FlamePoint','Calico','Tortie','Tuxedo','Tabby','OrangeTabby','TigerTabby']
-list_of_cat_images=['flamepoint_simba_resize.jpg','calico_sweetie_resize.jpg','tortie-iris-baby_resize.jpg', 
-                    'tuxedo_chinni_resize.jpg','tabby_juno_resize.jpg','orange_tabby_haley_resize.jpg','tiger_remo_resize.jpg']
-list_of_cat_names=['Flamepoint Simba!','Calico Sweetie!','Tortie Iris!','Tuxedo Cinni!', 'Tabby Juno!','Orange Tabby Haley!','Tiger Remo!']
+list_of_choices2=['Yes, absolutely!', 'No, dont be ridiculous!', 'Not sure. Is that another cat, really?']
+list_of_cats=['FlamePoint','Calico','Tortie','Tuxedo','Black-N-White','Tabby','OrangeTabby','TigerTabby','TigerAgain']
+list_of_cat_images=['flamepoint_simba.jpg','calico_sweetie_resize.jpg','tortie-iris-baby_resize.jpg', 
+                'tuxedo_chinni_resize.jpg','black_n_white_resize.jpg=,'tabby_juno_resize.jpg','orange_tabby_haley_resize.jpg','tiger_remo_resize.jpg']
+list_of_cat_names=['Flamepoint, Simba!','Calico, Sweetie!','Tortie, Iris!','Tuxedo, Cinni!', 'Black n white, Lily!','Tabby, Juno!','Orange Tabby, Haley!','Tiger, Remo!','Second Tiger, Nero!']
 ##githublink = 'https://github.com/austinlasseter/chuck_norris_execution'
 githublink = 'https://github.com/sudha-akula/201-chuck-norris-callback'
 
@@ -25,8 +25,8 @@ app.title='Cats'
 
 ####### Layout of the app ########
 app.layout = html.Div([    
-    html.H2('Project1:'),
-    html.H3(heading2),
+    html.H3('Project1:'),
+    html.H2(heading2),
     html.Img(src=app.get_asset_url(image2), style={'width': 'auto', 'height': '10%'}),
     dcc.Dropdown(id='your-input-here2',
                 options=[{'label': i, 'value': i} for i in list_of_choices2],
@@ -36,8 +36,8 @@ app.layout = html.Div([
     html.Div(id='your-output-here2', children=''),
     
     html.Br(),
-    html.H2('Project2:'),
-    html.H3(heading3),
+    html.H3('Project2:'),
+    html.H2(heading3),
     dcc.Dropdown(id='your-input-cat',
                 options=[{'label': i, 'value': i} for i in list_of_cats],
                 value='FlamePoint',
@@ -49,7 +49,7 @@ app.layout = html.Div([
     html.Div(id='cat-name', children=''),
     
     html.Br(),
-    html.Img(id='cat-image',src=app.get_asset_url('flamepoint_simba_resize.jpg'), style={'width': 'auto', 'height': '10%'}),
+    html.Img(id='cat-image',src=app.get_asset_url('flamepoint_simba.jpg'), style={'width': 'auto', 'height': '10%'}),
     
     html.Br(),
     html.A('Code on Github', href=githublink),
