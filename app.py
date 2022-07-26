@@ -36,8 +36,8 @@ app.layout = html.Div([
     
     html.H2(heading3),
     dcc.Dropdown(id='your-input-cat',
-                options=[{'label': i, 'catvalue': i} for i in list_of_cats],
-                catvalue='FlamePoint',
+                options=[{'label': i, 'value': i} for i in list_of_cats],
+                value='FlamePoint',
                 style={'width': '500px'}),
     
     
