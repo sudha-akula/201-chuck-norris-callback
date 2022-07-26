@@ -15,7 +15,7 @@ githublink = 'https://github.com/sudha-akula/201-chuck-norris-callback'
 
 image2='Lily_has_a_twin_resize.jpg'
 heading2='Does Lily have a twin? You tell me..'
-heading3='Cats.. Cats.. My Cats!'
+heading3='Cats... Cats... My Cats!'
 
 ########### Initiate the app
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
