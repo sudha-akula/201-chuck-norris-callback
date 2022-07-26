@@ -60,7 +60,7 @@ def display_value(whatever_you_chose2):
     return f'Does Lily have a twin? {whatever_you_chose2}.'
 
 @app.callback(dash.dependencies.Output('cat-name', 'children'),dash.dependencies.Output('cat-image','src'),
-              [dash.dependencies.Input('your-input-cat', 'catvalue')])
+              [dash.dependencies.Input('your-input-cat', 'value')])
 
 def display_value2(select_cat):
               
