@@ -8,7 +8,7 @@ import os
 list_of_choices2=['Yes, absolutely!', 'No, dont be ridiculous!', 'Not sure. Is that another cat, really?']
 list_of_cats=['FlamePoint','Calico','Tortie','Tuxedo','Black-N-White','Tabby','OrangeTabby','TigerTabby','TigerAgain']
 list_of_cat_images=['flamepoint_simba.jpg','calico_sweetie_resize.jpg','tortie-iris-baby_resize.jpg',
-                'tuxedo_chinni_resize.jpg','black_n_white_resize.jpg','tabby_juno_resize.jpg','orange_tabby_haley_resize.jpg','tiger_remo_resize.jpg']
+                'tuxedo_chinni_resize.jpg','black_n_white_resize.jpg','tabby_juno_resize.jpg','orange_tabby_haley_resize.jpg','tiger_remo_resize.jpg','tiger_nero.jpg']
 list_of_cat_names=['Flamepoint, Simba!','Calico, Sweetie!','Tortie, Iris!','Tuxedo, Cinni!', 'Black n white, Lily!','Tabby, Juno!','Orange Tabby, Haley!','Tiger, Remo!','Second Tiger, Nero!']
 ##githublink = 'https://github.com/austinlasseter/chuck_norris_execution'
 githublink = 'https://github.com/sudha-akula/201-chuck-norris-callback'
